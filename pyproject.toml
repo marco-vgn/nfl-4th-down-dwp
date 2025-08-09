@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "4th-down-dwp-model"
+name = "nfl_4thdown_dwp"
 version = "0.0.1"
 description = "MLP to suggest play/FG_att/punt based on WP differential, aux probabilities and uncertainity."
 authors = [
