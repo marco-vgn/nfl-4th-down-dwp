@@ -18,6 +18,14 @@ requirements:
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 	
 
+.PHONY: data features labels train eval app
+
+data:        ## Pull raw PBP to data/raw
+features:    ## Build 4th-down states to data/interim
+labels:      ## Create processed labeled table (ΔWP + aux) to data/processed
+train:       ## Train MLP; save weights+calibration to models/
+eval:        ## Export metrics & figs to reports/figures
+app:         ## Run Gradio app
 
 
 ## Delete all compiled Python files
